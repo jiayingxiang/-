@@ -151,7 +151,7 @@ Page({
     let carts = this.data.carts;
     let num = carts[index].num;
     if (num < 1) {
-      this.deleteList(e);
+      num=1;
     }
     num = num - 1;
     carts[index].num = num;
